@@ -1,4 +1,4 @@
-import javax.management.JMRuntimeException;
+
 
 public class City {
 
@@ -7,6 +7,8 @@ public class City {
 	private String country;
 	private int nbInhabitants;
 
+	//variable d'instance
+	int value=1;
 
 	// constructor
 	public City(String cityName, String country, int nbInhabitants) {
@@ -58,13 +60,20 @@ public class City {
 		this.nbInhabitants = nbInhabitants;
 	}
 
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
 
 	// methodes
 	public String toString() {
 
 		return "ville de " + getCityName() + " en " + getCountry() +" ayant " + getNbInhabitants() + " habitants.";
-				
-			
+
+
 
 	}
 
