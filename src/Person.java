@@ -7,19 +7,19 @@ public class Person {
 	private String lastName;
 	private int age;
 	private String adress;
-	private Object ville;
+	private Object City;
 
 	//variable d'instance
 	int value=1;
 
 	// constructor
-	public Person(String firstName, String lastName, int age, String adress, City city) {
+	public Person(String firstName, String lastName, int age, String adress, City City) {
 		
 		setFirstName(firstName);
 		setLastName(lastName);
 		setAge(age);
 		setAdress(adress);
-		setVille(city);
+		setCity(City);
 	}
 
 	// constructor surcharge
@@ -84,23 +84,30 @@ public class Person {
 		this.value = value;
 	}
 	
-	public Object getVille() {
-		return ville;
+	public Object getCity() {
+		return City;
 	}
 
-	public void setVille(Object ville) {
-		this.ville = ville;
+	public void setCity(Object City) {
+		this.City = City;
 	}
 	// methodes
+	/*
+	 * public String toString() {
+	 * 
+	 * return "Person [ lastName= " + getLastName() + ", firstName= " +
+	 * getFirstName() + ", age= " +getAge() + ", adress= "+getAdress()+ " ]"
+	 * +"[ BornCity [ "+getCity() +" ]";
+	 * 
+	 * }
+	 */
+	// version 2.0
 	public String toString() {
 
-		return "Person [ lastName= " + getLastName() + ", firstName= " + getFirstName() +
-				", age= " +getAge() + ", adress= "+getAdress()+ " ]" +"[ BornCity [ "+getVille() +" ]";
-
-
+		return getLastName() + " , " + getFirstName() +
+				" , " +getAge()+"ans" + " , habitant "+getAdress() + getCity();
 
 	}
-
 
 
 }

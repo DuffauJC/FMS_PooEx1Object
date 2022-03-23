@@ -30,8 +30,6 @@ public class City {
 
 		setCityName(cityName);
 		setCountry(country);
-		setNbInhabitants(nbInhabitants);
-
 	}
 
 
@@ -85,10 +83,28 @@ public class City {
 	 * 
 	 * }
 	 */
+	
+	// exo 1.9
+	/*
+	 * public String toString() {
+	 * 
+	 * return "name= " + getCityName() + " state= " + getCountry()
+	 * +" nbInhabitants= " + getNbInhabitants();
+	 * 
+	 * }
+	 */
+	// version 2.0
 	public String toString() {
+		if (getNbInhabitants()==0) {
+			return " , Ville de naissance : " + getCityName() + " , " + getCountry();
+		}else {
+		return " , Ville de naissance : " + getCityName() + " , " + getCountry() +
+				" , population "+getCityName()+" , " + getNbInhabitants()+" habitants";	
+		}
 
-		return "name= " + getCityName() + " state= " + getCountry() +" nbInhabitants= " + getNbInhabitants();
+		
 
 	}
+
 
 }
