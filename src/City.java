@@ -10,7 +10,12 @@ public class City {
 	//variable d'instance
 	int value=1;
 
-	// constructor
+/**
+ * constructor
+ * @param cityName
+ * @param country
+ * @param nbInhabitants
+ */
 	public City(String cityName, String country, int nbInhabitants) {
 
 		setCityName(cityName);
@@ -93,7 +98,11 @@ public class City {
 	 * 
 	 * }
 	 */
-	// version 2.0
+	// 
+	/**
+	 * version 2.0
+	 * methode toString
+	 */
 	public String toString() {
 		if (getNbInhabitants()==0) {
 			return " , Ville de naissance : " + getCityName() + " , " + getCountry();

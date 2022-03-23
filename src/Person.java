@@ -12,7 +12,15 @@ public class Person {
 	//variable d'instance
 	int value=1;
 
-	// constructor
+	
+	/**
+	 * Constructor
+	 * @param firstName
+	 * @param lastName
+	 * @param age
+	 * @param adress
+	 * @param City
+	 */
 	public Person(String firstName, String lastName, int age, String adress, City City) {
 		
 		setFirstName(firstName);
@@ -22,7 +30,13 @@ public class Person {
 		setCity(City);
 	}
 
-	// constructor surcharge
+	/**
+	 * constructor
+	 * @param firstName
+	 * @param lastName
+	 * @param age
+	 * @param adress
+	 */
 	public Person(String firstName, String lastName, int age, String adress) {
 		
 		setFirstName(firstName);
@@ -35,7 +49,6 @@ public class Person {
 
 	// accessors
 	
-
 	public String getFirstName() {
 		return firstName;
 	}
@@ -101,7 +114,12 @@ public class Person {
 	 * 
 	 * }
 	 */
-	// version 2.0
+
+	
+	/**
+	 * version 2.0
+	 * methode toString
+	 */
 	public String toString() {
 
 		return getLastName() + " , " + getFirstName() +
