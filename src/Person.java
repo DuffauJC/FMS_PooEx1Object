@@ -7,20 +7,30 @@ public class Person {
 	private String lastName;
 	private int age;
 	private String adress;
+	private Object ville;
 
 	//variable d'instance
 	int value=1;
 
 	// constructor
+	public Person(String firstName, String lastName, int age, String adress, City city) {
+		
+		setFirstName(firstName);
+		setLastName(lastName);
+		setAge(age);
+		setAdress(adress);
+		setVille(city);
+	}
+
+	// constructor surcharge
 	public Person(String firstName, String lastName, int age, String adress) {
 		
 		setFirstName(firstName);
 		setLastName(lastName);
 		setAge(age);
 		setAdress(adress);
+		
 	}
-
-
 
 
 	// accessors
@@ -73,15 +83,24 @@ public class Person {
 	public void setValue(int value) {
 		this.value = value;
 	}
+	
+	public Object getVille() {
+		return ville;
+	}
 
+	public void setVille(Object ville) {
+		this.ville = ville;
+	}
 	// methodes
 	public String toString() {
 
-		return "Person [ lastName " + getLastName() + ", firstName= " + getFirstName() +
-				", age= " +getAge() + ", adress= "+getAdress()+ " ]";
+		return "Person [ lastName= " + getLastName() + ", firstName= " + getFirstName() +
+				", age= " +getAge() + ", adress= "+getAdress()+ " ]" +"[ BornCity [ "+getVille() +" ]";
 
 
 
 	}
+
+
 
 }

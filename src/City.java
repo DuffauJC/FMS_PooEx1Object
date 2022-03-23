@@ -25,6 +25,14 @@ public class City {
 		setNbInhabitants(nbInhabitants);
 
 	}
+	// constructor (surcharge)
+	public City(String cityName, String country) {
+
+		setCityName(cityName);
+		setCountry(country);
+		setNbInhabitants(nbInhabitants);
+
+	}
 
 
 	// accessors
@@ -69,11 +77,17 @@ public class City {
 	}
 
 	// methodes
+	/*
+	 * public String toString() {
+	 * 
+	 * return "ville de " + getCityName() + " en " + getCountry() +" ayant " +
+	 * getNbInhabitants() + " habitants.";
+	 * 
+	 * }
+	 */
 	public String toString() {
 
-		return "ville de " + getCityName() + " en " + getCountry() +" ayant " + getNbInhabitants() + " habitants.";
-
-
+		return "name= " + getCityName() + " state= " + getCountry() +" nbInhabitants= " + getNbInhabitants();
 
 	}
 

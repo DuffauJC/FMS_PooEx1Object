@@ -15,7 +15,7 @@ public class TestPerson {
 
 		// exo 1.8
 
-		Person joe = new Person("Dalton", "Joe", 65,"Prison de Seilh"); 
+		Person joe = new Person("Dalton", "Joe", 65,"Prison de Seilh", new City("Texas","Nevada")); 
 		Person averell = new  Person("Dalton", "Averell", 60,"Les beaumettes"); 
 		Person william = new Person("Dalton", "William", 50,"Fleury Mérogis"); 
 	
